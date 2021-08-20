@@ -1,0 +1,358 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5%;
+  }
+
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2e2e2e;
+    margin:0px;
+    padding: 0px;
+    width: 100vw;
+  }
+  
+  .container {
+    display: grid;
+    width: 60vw;
+    justify-content: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "home-me home-bio"
+      "research research"
+      "research1 research1"
+      "research2 research2"
+      "teaching teaching"
+      "data-teach anth-teach" 
+      "footer footer";
+    grid-row-gap: 2%;
+    grid-column-gap: 2%;
+    font-size: 1fr;
+    color: white;
+    background-color: #2e2e2e;
+    text-align: center;
+  }
+
+
+  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  #af-list{
+    display: inline;
+  }
+
+  #af-list img{
+    width: 20%;
+    border-radius: 50%; 
+    padding: 1%;
+  }
+
+  #home-bio a{
+    display: inline;
+  }
+
+  h1{
+    font-size: 250%;
+  }
+
+  h4{
+    margin-top: -5%;
+    color: grey;
+  }
+
+
+  #header {
+    grid-area: header;
+    padding: 1%;
+    background-color: #2e2e2e;
+    min-width: 100%;
+    opacity: 0.95;
+  }
+
+  #header a{
+    margin-right: 1rem;
+  }
+
+  ol,ul {
+    list-style: none;
+    }
+
+  #nav-links li{
+      float: left;
+  }
+
+  .curr-link a{
+    color: #b6bcc2b0;
+
+  }
+  
+  .inactive-link a{
+      color: white;
+  }  
+
+  #nav-links a:hover {
+    color: #b6bcc27c;
+    transition: 0.3s;
+  } 
+
+  a:hover {
+    color: #b6bcc27c;
+    transition: 0.3s;
+  } 
+
+  #EJR {
+    padding-right: 7%;
+    font-size: 200%;
+  }
+  
+  #home-me {
+    grid-area: home-me;
+    padding: var(--main-padding);
+    text-align: left;
+    justify-content: center;
+  }
+
+  #home-bio {
+    grid-area: home-bio;
+    padding: var(--main-padding);
+    text-align: left;
+    padding-top: 0;
+  }
+
+
+   #profile-img {
+    width: 80%;
+    border-radius: 50%; 
+    margin-top: -10%;
+  }
+
+  #home-bio-square {
+    padding: 4%;
+    box-shadow: 0 0 0 2px white,
+    0 0 0 12px #2e2e2e,
+              0 0 0 14px white;
+  }
+
+  #first-sen{
+    font-size: 150%;
+  }
+
+
+  .bio-icons{
+    float: left;
+    width: 10%;
+    padding: 1%;
+}
+  
+  #research{
+    grid-area: research;
+    margin-top: -5%;
+  }
+
+  #teaching{
+    grid-area: teaching;
+    margin-top: -5%;
+  }
+
+  #anth-teach{
+    grid-area: anth-teach;
+  }
+
+  #data-teach{
+    grid-area: data-teach;
+  }
+
+  #teach-buffer{
+    grid-area: teach-buffer;
+  }
+
+  #research1 {
+    grid-area: research1;
+    padding: var(--main-padding);
+    width: 100%;
+    margin-top: -5%;
+  }
+
+  #research2 {
+    grid-area: research2;
+    padding: var(--main-padding);
+    width: 100%;
+    margin-top: -10%;
+  }
+
+  .img img{
+    border-radius: 50%; 
+    width: 90%;
+    margin-top: 10%;
+    border: solid 8px white;
+    padding: 1%;
+  }
+
+  .research-left {
+    width: 40%;
+    float: left;
+    margin-right: 5%;
+  }
+
+  .research-left .text{
+    width: 55%;
+    float: left;
+    text-align: right;
+  }
+
+  .research-left .img{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+  }
+
+  .research-right {
+    width: 40%;
+    float: left;
+  }
+
+  .research-right .text{
+    width: 55%;
+    float: right;
+    text-align: left;
+  }
+
+  .research-right .img{
+    width: 40%;
+    float: left;
+    margin-right: 5%;
+  }
+
+
+  footer {
+    grid-area: footer;
+    padding: var(--main-padding);
+  }
+
+  .anthro-color {
+    color: rgba(250, 211, 84);
+  }
+
+  .data-color {
+    color: #3ca9f2;
+  }
+
+  .pdf-button{
+    color: rgba(250, 211, 84);
+    display: inline;
+    margin: 0;
+}
+
+.data-button{
+    color: #3ca9f2;
+    display: inline;
+    margin: 0;
+}
+
+.teaching img{
+  display: inline-block;
+  text-align: center;
+}
+
+.teaching-img img {
+  vertical-align: top;
+  width: 100%;
+}
+
+.teaching-img figcaption {
+  text-align: center;
+}
+
+#teaching figure {
+  width: 100%;
+  display: inline-block;
+  background: white;
+  color: black;
+  text-align: center;
+  margin: 5px; /* adjust as needed */
+}
+
+.img figure{
+  width: 100%;
+  margin: 0;
+}
+
+figure img {
+  vertical-align: top;
+}
+
+figure figcaption{
+  padding: 4%;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "home-me"
+      "home-bio"
+      "research"
+      "research1"
+      "research2"
+      "teaching"
+      "data-teach"
+      "anth-teach"
+      "footer";
+  }
+  header ul {
+    justify-content: space-between;
+  }
+
+  #nav-links {
+    line-height: 300%;
+    margin:0;
+  }
+
+  #home-bio{
+    width: 100%;
+  }
+
+  #home-me{
+    width: 100%;
+    text-align: center;
+  }
+
+  .research-left {
+    width: 100%;
+    float: left;
+  }
+
+  .research-right {
+    width: 100%;
+    float: left;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+  #nav-links {
+    line-height: 400%;
+    margin:0;
+  }
+
+  #header{   
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0%;}
+}
