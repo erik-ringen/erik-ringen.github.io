@@ -308,7 +308,7 @@ figure figcaption{
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .container {
     width: 90vw;
     margin-left: 5vw;
@@ -365,7 +365,7 @@ figure figcaption{
 
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 1001px) {
 
   #nav-links {
     line-height: 400%;
@@ -376,5 +376,24 @@ figure figcaption{
     position: sticky;
     position: -webkit-sticky;
     top: 0%;}
-   
+
+    #data-teach{
+      width: 70%;
+      margin-left: 30%;
+    }
+  
+    #anth-teach{
+      width: 70%;
+      margin-right: 30%;
+    }
+
+}
+
+@media only screen and (min-width: 1800px) {
+.container{
+  width: 60vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
 }
