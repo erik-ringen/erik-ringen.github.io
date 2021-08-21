@@ -17,10 +17,10 @@
   
   .container {
     display: grid;
-    width: 60vw;
+    width: 80vw;
     justify-content: center;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "header header"
@@ -57,10 +57,6 @@
     padding: 1%;
   }
 
-  #home-bio a{
-    display: inline;
-  }
-
   h1{
     font-size: 250%;
   }
@@ -68,6 +64,10 @@
   h4{
     margin-top: -5%;
     color: grey;
+  }
+
+  .sub-title{
+    color:#b6bcc2b0;
   }
 
 
@@ -118,8 +118,11 @@
   #home-me {
     grid-area: home-me;
     padding: var(--main-padding);
-    text-align: left;
     justify-content: center;
+  }
+
+  #home-me a{
+    display: inline;
   }
 
   #home-bio {
@@ -129,6 +132,9 @@
     padding-top: 0;
   }
 
+  #home-bio a{
+    display: inline;
+  }
 
    #profile-img {
     width: 80%;
@@ -137,6 +143,8 @@
   }
 
   #home-bio-square {
+    margin-left: -10%;
+    width: 100%;
     padding: 4%;
     box-shadow: 0 0 0 2px white,
     0 0 0 12px #2e2e2e,
@@ -149,14 +157,14 @@
 
 
   .bio-icons{
-    float: left;
-    width: 10%;
+    width: 15%;
     padding: 1%;
+    margin-top:4%;
 }
   
   #research{
     grid-area: research;
-    margin-top: -5%;
+    margin-top: 0%;
   }
 
   #teaching{
@@ -233,6 +241,13 @@
     margin-right: 5%;
   }
 
+  figure a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+  }
+
 
   footer {
     grid-area: footer;
@@ -270,20 +285,12 @@
 }
 
 .teaching-img figcaption {
-  text-align: center;
-}
-
-#teaching figure {
-  width: 100%;
-  display: inline-block;
+  text-align: left;
   background: white;
   color: black;
-  text-align: center;
-  margin: 5px; /* adjust as needed */
 }
 
 .img figure{
-  width: 100%;
   margin: 0;
 }
 
@@ -293,10 +300,11 @@ figure img {
 
 figure figcaption{
   padding: 4%;
+  padding-top: 1%;
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
   .container {
     width: 90vw;
     margin-left: 5vw;
@@ -327,6 +335,11 @@ figure figcaption{
     width: 100%;
   }
 
+  #home-bio-square {
+    margin-left: 0;
+    width: 85%;
+  }
+
   #home-me{
     width: 100%;
     text-align: center;
@@ -342,9 +355,13 @@ figure figcaption{
     float: left;
   }
 
+  h4{
+    margin-top: -3%;
+  }
+
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 901px) {
 
   #nav-links {
     line-height: 400%;
@@ -355,4 +372,5 @@ figure figcaption{
     position: sticky;
     position: -webkit-sticky;
     top: 0%;}
+   
 }
