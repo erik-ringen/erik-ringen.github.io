@@ -161,7 +161,7 @@
 
 
   .bio-icons{
-    width: 15%;
+    width: 8%;
     padding: 1%;
     margin-top:4%;
 }
@@ -333,6 +333,10 @@ figure figcaption{
   #nav-links {
     line-height: 300%;
     margin:0;
+  }
+
+  .bio-icons{
+    width: 12%;
   }
 
   #home-bio{
